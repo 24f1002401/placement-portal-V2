@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Placement Portal Application</title>
+
+    <!-- Bootstrap CSS (colors, layout) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+
+    <!-- Small custom style to make it colorful but simple -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8f9ff, #e3f2fd);
+            min-height: 100vh;
+        }
+        .navbar-brand {
+            font-weight: 600;
+        }
+        .page-container {
+            padding-top: 70px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Simple navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" @click="goTo('home')">
+                Placement Portal
+            </a>
+        </div>
+    </nav>
+
+    <div id="app" class="page-container">
+        <div class="container">
+            <!-- This is where we switch pages -->
+            <component :is="currentView"
+                       :go-to="goTo"
+                       :initial-role="initialRole"
+                       :set-user="setUser"
+                       :current-user-id="currentUserId">
+            </component>
+        </div>
+    </div>
+
+    <!-- Vue 3 via CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- Our main JS file -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <!-- Bootstrap JS (optional now, for later components) -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
