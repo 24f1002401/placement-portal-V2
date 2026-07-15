@@ -1,0 +1,4 @@
+TO: admin@ppa.com
+SUBJECT: CSV export ready
+
+Your application history export is ready: applications_user_5_20260713_230545.csv

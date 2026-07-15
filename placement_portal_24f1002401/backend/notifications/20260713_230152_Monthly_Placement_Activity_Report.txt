@@ -1,0 +1,16 @@
+TO: admin@ppa.com
+SUBJECT: Monthly Placement Activity Report
+
+
+    <html><body>
+      <h2>Monthly Placement Activity Report</h2>
+      <p>Generated on 2026-07-13 23:01</p>
+      <ul>
+        <li>Drives conducted (approved/closed): 1</li>
+        <li>Total applications: 0</li>
+        <li>Students selected: 0</li>
+        <li>Active students: 0</li>
+        <li>Approved companies: 1</li>
+      </ul>
+    </body></html>
+    

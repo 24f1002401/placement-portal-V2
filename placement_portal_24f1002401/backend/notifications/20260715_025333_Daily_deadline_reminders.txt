@@ -1,0 +1,4 @@
+TO: admin@ppa.com
+SUBJECT: Daily deadline reminders
+
+No upcoming deadlines within 3 days as of 2026-07-15.
